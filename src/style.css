@@ -1,0 +1,43 @@
+h1 {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+footer {
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 5px 50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px;
+}
+
+.border {
+  border-style: solid 1px black;
+  padding: 30px;
+}
+.temperature {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.units {
+  position: relative;
+  top: -14px;
+}
+
+.precipitation {
+  font-size: 12px;
+  position: relative;
+  top: 12px;
+}
+
+.days {
+  margin-top: 40px;
+}
