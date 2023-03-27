@@ -38,6 +38,7 @@ document.querySelector("#temperature").innerHTML = Math.round(response.data.main
 document.querySelector("#weather-description").innerHTML = response.data.weather[0].main;
 document.querySelector("#humidity").innerHTML = response.data.main.humidity; 
 document.querySelector("#wind").innerHTML = `${response.data.wind.speed} km/h`;
+document.querySelector("#icon").setAttribute ("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
   }

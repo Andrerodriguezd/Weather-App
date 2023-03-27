@@ -12,6 +12,9 @@ footer {
   margin: 0 auto;
   padding: 5px 50px;
 }
+img {
+  object-fit: cover;
+}
 
 .container {
   max-width: 600px;
@@ -41,3 +44,8 @@ footer {
 .days {
   margin-top: 40px;
 }
+
+.weather-condition-ul {
+  list-style-type: none;
+}
+
