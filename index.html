@@ -15,11 +15,16 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="border">
-        <form id="city-form">
-          <input type="text" placeholder="City Search" id="city-search" />
+    
+    
+<div class="container">
+  <div class="border">
+    <form id="city-form">
+         
+          <input type="text" placeholder="City Search" id="city-search"/>
+          
           <button type="submit" class="btn btn-secondary">Search</button>
+          
           <button type="button" id="geo-button" class="btn btn-primary">Current Location</button>
         </form>
         <h1>Type a city</h1>
@@ -28,9 +33,17 @@
           <br />
           Sunny
         </h2>
+        <h3 id="weather-description"></h3>
+        <h3>
+        
+      
+      
+        
+          
+       
 
-        <div class="row">
-          <div class="d-flex weather-temperature">
+          <div class="row">
+          <div class="d-flex weather-temperature"  id="temp-weather">
             <img src="https://openweathermap.org/img/wn/01d.png" 
             alt="Clear"
             id="icon"
@@ -49,9 +62,7 @@
             <div class="col-6 precipitation">
               
           <ul class="weather-condition-ul">
-<li>
-            Weather: <span id="weather-description"></span> 
-            </li>
+
            
             
            <li>
@@ -62,47 +73,22 @@
             Wind: <span id="wind"></span> 
             </li>
             </ul>
-         </div>
-</div>
-          </div>
-
-          
-          <div class="days">
-            <div class="row">
-              <div class="col-2">
-                Mon
-                <br />
-                🔆
-              </div>
-              <div class="col-2">
-                Tue
-                <br />
-                ⛅️
-              </div>
-              <div class="col-2">
-                Wed
-                <br />
-                ⛅️
-              </div>
-              <div class="col-2">
-                Thu
-                <br />
-                🌧
-              </div>
-              <div class="col-2">
-                Fri
-                <br />
-                🌧
-              </div>
-            </div>
           </div>
         </div>
+        
       </div>
-    </div>
+</div>
+
+    
     <footer>
-  <a href= "https://github.com/Andrerodriguezd/Weather-App" target="_blank"> Open-Source code</a>
-  by Andrea Rodríguez
-  </footer>
-    <script src="src/index.js"></script>
-  </body>
-</html>
+    <a href= "https://github.com/Andrerodriguezd/Weather-App" target="_blank"> Open-Source code</a>
+    by Andrea Rodríguez
+    </footer>
+</div>      
+
+
+          
+          
+          <script src="src/index.js"></script>
+        </body>
+        </html>

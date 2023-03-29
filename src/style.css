@@ -7,14 +7,21 @@ h2 {
   font-size: 18px;
 }
 
+h3{
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
 footer {
   font-size: 12px;
-  margin: 0 auto;
-  padding: 5px 50px;
+
 }
+
 img {
   object-fit: cover;
+  max-width: 70px;
 }
+
 
 .container {
   max-width: 600px;
@@ -25,13 +32,18 @@ img {
 
 .border {
   border-style: solid 1px black;
-  padding: 30px;
+  padding: 30px 10px 15px 30px;
   border-radius: 6px;
+ 
 }
 .temperature {
   font-size: 40px;
   font-weight: 900;
 }
+.form-control {
+  max-width: 100px;
+}
+
 
 .units {
   position: relative;
@@ -60,4 +72,20 @@ img {
 .weather-temperature .active:hover {
   text-decoration: none;
 
+}
+
+#temp-weather {
+  padding-top: 25px;
+  position:relative;
+  left: -15px; 
+}
+
+#temperature {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.units {
+  position: relative;
+  top: -28px;
 }
