@@ -64,7 +64,7 @@ document.querySelector("#icon").setAttribute ("alt",response.data.weather[0].des
 
 getForecast(response.data.coord);
 
-
+resetUnits();
 
 let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
@@ -113,7 +113,7 @@ function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
-  axios.get(`${apiUrl}`).then(displayWeather); 
+  axios.get(`${apiUrl}`).then(displayWeather).then(resetUnits); 
 }
 
 function displayFahrenheitTemperature(event) {
@@ -134,7 +134,13 @@ function displayCelsiusTemperature(event) {
   fahrenheitLink.classList.remove("active");
 }
 
-let celciusTemp = null;
+function resetUnits(){
+celsiusLink.classList.add("active");
+fahrenheitLink.classList.remove("active");
+
+}
+
+let celsiusTemp = null;
 
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", searchCity);
